@@ -39,7 +39,7 @@ This System follows a CNN Encoder + Transformer Decoder Architecture:
 - Transformer Decoder has Masked Self-Attention and Cross-Attention over the image memory.
 - Linear Projection layer to vocabulary logits.
 
-##⚙️🔎Model Details: 
+## ⚙️🔎Model Details: 
 
 #### Encoder: 
 - Backbone: EfficientNet-B0(Pre-trained).
