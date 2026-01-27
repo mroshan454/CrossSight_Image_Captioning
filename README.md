@@ -25,7 +25,7 @@ Unlike classification tasks, captioning requires **sequence modeling**, **cross-
 
 ## 🏛️🏗️System Architecture:
 
-![System Architecture](Images_and_Diagrams/CrossSight-System-Architecture_Final_.png)
+![System Architecture](Images and Diagrams/CrossSight-System-Architecture_Final.png)
 
 
 
