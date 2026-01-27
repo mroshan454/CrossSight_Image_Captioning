@@ -15,3 +15,14 @@ This Demo Generates **token-by-token**  animated output captions which is simila
 
 ## 🧐📝 Problem Statement: 
 
+Image Captioning is a challenging multi-modal task that requires: 
+- Extracting Visual Information from the image.
+- Align the Visual Information with language.
+- Generate Grammatically Correct and contextually relevant captions.
+- Ensuring Autoregressive Generation.
+
+Unlike classification tasks, captioning requires **sequence modeling**, **cross-attention**, and careful handling of training vs inference behavior.
+
+## 🏛️🏗️System Architecture:
+
+
