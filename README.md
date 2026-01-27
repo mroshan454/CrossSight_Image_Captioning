@@ -77,6 +77,24 @@ This replicates how GPT-style Language models generate text.
 
 #### Training Loss Curve📉:
 
+![Training_Loss_Curve](Images_and_Diagrams/loss_curve_cross_sight_30_epochs.png)
+
+### Qualitative Example:
+
+![Prediction Example](Images_and_Diagrams/loss_curve_cross_sight_30_epochs.png)
+
+**Prediction:**  
+> two dogs are playing together on the street
+
+**Ground Truth Captions:**  
+- A black dog and a spotted dog are fighting  
+- Two dogs of different breeds looking at each other on the road  
+- Two dogs on pavement moving toward each other
+
+
+
+
+
 
 
 
