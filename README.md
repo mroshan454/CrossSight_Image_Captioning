@@ -5,7 +5,7 @@ CrossSight is an End-to-End Image Captioning System that learns to **see** image
 
 The entire architecture is built from scratch using PyTorch , from attention mechanisms - to inference-time decoding , and is Deployed as an interactive web demo using Gradio. 
 
-## 💻 Demo: 
+## Demo💻: 
 
 HuggingFace Spaces: https://roshan454-crosssight.hf.space/?__theme=system&deep_link=6dMURe2Uxjw
 
@@ -13,7 +13,7 @@ This Demo Generates **token-by-token**  animated output captions which is simila
 
 (Demo_GIF)
 
-## 🧐📝 Problem Statement: 
+## Problem Statement🧐📝: 
 
 Image Captioning is a challenging multi-modal task that requires: 
 - Extracting Visual Information from the image.
@@ -23,7 +23,7 @@ Image Captioning is a challenging multi-modal task that requires:
 
 Unlike classification tasks, captioning requires **sequence modeling**, **cross-attention**, and careful handling of training vs inference behavior.
 
-## 🏛️🏗️System Architecture:
+## System Architecture🏛️🏗️:
 
 
 ![System Architecture](Images_and_Diagrams/CrossSight-System-Architecture_Final.png)
@@ -39,17 +39,64 @@ This System follows a CNN Encoder + Transformer Decoder Architecture:
 - Transformer Decoder has Masked Self-Attention and Cross-Attention over the image memory.
 - Linear Projection layer to vocabulary logits.
 
-## ⚙️🔎Model Details: 
+## Model Details⚙️🔎: 
 
 #### Encoder: 
 - Backbone: EfficientNet-B0(Pre-trained).
 - Linear Projection Layer gives output as shape (B,1,512)
-- Acts as a fixed visual-context for the decoder. (Like a writer describing a painting in the wall, here the painting is a fixed thing and his writing is autoregressive).
 
 #### Decoder: 
 - Transformer Decoder(6 layers , 8 heads).
 - Uses Causal Masking to prevent seeing the future tokens.
 - Cross-Attention with the Image Memory from the Encoder.
+
+## Training 🛠️🔄: 
+
+![Training vs Inference](Images_and_Diagrams/Training_vs._Inference_Final.drawio.png)
+
+- Teacher Forcing is used during Training.
+- Captions are shifted:
+  - Input: "<START> a little girl riding a bike
+  - Output: " a little girl riding a bike <STOP>" 
+- CrossEntropy Loss is computed across all timestep.
+- '<PAD>' tokens are ignored during loss computation.
+
+## Inference 📝🤔💬:
+
+![Autoregressive Generation](Images_and_Diagrams/Autoregressive_Caption_Generation_Final.drawio.png)
+
+During Inference:
+- Generation is started with <START> token.
+- Model Predict One Token at a time.
+- Each Token is appended to the input sequence.
+- Generation stops at <END> or max_length reaches.
+
+This replicates how GPT-style Language models generate text.
+
+## Results📊:
+
+#### Training Loss Curve📉:
+
+![Training_Loss_Curve](Images_and_Diagrams/loss_curve_cross_sight_30_epochs.png)
+
+### Qualitative Example:
+
+![Prediction Example](Images_and_Diagrams/loss_curve_cross_sight_30_epochs.png)
+
+**Prediction:**  
+> two dogs are playing together on the street
+
+**Ground Truth Captions:**  
+- A black dog and a spotted dog are fighting  
+- Two dogs of different breeds looking at each other on the road  
+- Two dogs on pavement moving toward each other
+
+
+
+
+
+
+
 
   
 
