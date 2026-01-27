@@ -25,7 +25,34 @@ Unlike classification tasks, captioning requires **sequence modeling**, **cross-
 
 ## 🏛️🏗️System Architecture:
 
-![System Architecture](Images and Diagrams/CrossSight-System-Architecture_Final.png)
+
+![System Architecture](Images_and_Diagrams/CrossSight-System-Architecture_Final.png)
+
+This System follows a CNN Encoder + Transformer Decoder Architecture: 
+#### Image Encoder:
+- Image is passed to EfficientNetB0 to extract visual features.
+- This Features are passed through a linear projection layer which projects to the Transformer's model dimension.
+- The Output from the linear layer is treated as Image Memory which is used for **cross-attention** to generate next token.
+
+#### Caption Decoder: 
+- The input tokens are passed with token embeddings + positional embeddings.
+- Transformer Decoder has Masked Self-Attention and Cross-Attention over the image memory.
+- Linear Projection layer to vocabulary logits.
+
+## ⚙️🔎Model Details: 
+
+#### Encoder: 
+- Backbone: EfficientNet-B0(Pre-trained).
+- Linear Projection Layer gives output as shape (B,1,512)
+- Acts as a fixed visual-context for the decoder. (Like a writer describing a painting in the wall, here the painting is a fixed thing and his writing is autoregressive).
+
+#### Decoder: 
+- Transformer Decoder(6 layers , 8 heads).
+- Uses Causal Masking to prevent seeing the future tokens.
+- Cross-Attention with the Image Memory from the Encoder.
+
+  
+
 
 
 
