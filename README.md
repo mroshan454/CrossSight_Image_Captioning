@@ -79,17 +79,44 @@ This replicates how GPT-style Language models generate text.
 
 ![Training_Loss_Curve](Images_and_Diagrams/loss_curve_cross_sight_30_epochs.png)
 
-### Qualitative Example:
+**Observation🔬📝:**  
+- Loss is steadily Decreasing overall.
+- Some noise is expected due to small dataset size and Autoregressive sequence learning. 
 
-![Prediction Example](Images_and_Diagrams/loss_curve_cross_sight_30_epochs.png)
+### Qualitative Example(Seen Data):
+
+![Prediction Example](Images_and_Diagrams/Prediction_Example.png)
 
 **Prediction:**  
-> two dogs are playing together on the street
+> a black dog and a brown dog are standing on the street
 
-**Ground Truth Captions:**  
-- A black dog and a spotted dog are fighting  
-- Two dogs of different breeds looking at each other on the road  
-- Two dogs on pavement moving toward each other
+**Ground Truth Caption:**  
+> a black dog and a white dog with brown spots are staring at each other in the street
+
+**Observation🔬📝:** 
+Even when exact wording differs:
+- Model correctly identifies the main entities (two dogs)
+- the scene (street), and their interaction.  
+- shows attributes such as coat color and exact action.
+
+### Qualitative Example(Uneeen Data):
+
+![Prediction Example Unseen](Images_and_Diagrams/unseen_data.png)
+
+This was an image from COCO Dataset with caption , which is an unseen data during training.
+
+**Prediction:**  
+> a little boy in a white shirt and a hat is running on the grass
+
+**Ground Truth** 
+> Two guys playing baseball, with trees in the back.
+
+**Analysis📋:** 
+- The model correctly identifies people , motion , clothes , shirt color and outdoor environement.
+- Model captured visual action (running on grass) , shows movement and object understanding.
+- Misses higher-level activity context (e.g., sports), which can be improved with more diverse training data.
+
+
 
 
 
