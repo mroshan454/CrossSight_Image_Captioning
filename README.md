@@ -101,17 +101,18 @@ Even when exact wording differs:
 
 ### Qualitative Results(Unseen Data):
 
-![Prediction Example Unseen1](Images_and_Diagrams/unseen_data.png)
 **Example 1**
+![Prediction Example Unseen1](Images_and_Diagrams/unseen_data.png)
 
-![Prediction Example Unseen2](Images_and_Diagrams/prediction_2.png)
 **Example 2**
+![Prediction Example Unseen2](Images_and_Diagrams/prediction_2.png)
 
-![Prediction Example Unseen3](Images_and_Diagrams/prediction_3.png)
 **Example 3**
+![Prediction Example Unseen3](Images_and_Diagrams/prediction_3.png)
 
-![Prediction Example Unseen3](Images_and_Diagrams/prediction_4.png)
 **Example 4**
+![Prediction Example Unseen3](Images_and_Diagrams/prediction_4.png)
+
 
 
 
