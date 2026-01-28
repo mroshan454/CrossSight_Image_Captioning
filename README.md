@@ -135,10 +135,11 @@ However:
 1. Single Global Image Representation
 
   The CNN encoder compresses the entire image into a single vector, which limits fine-grained spatial understanding and object-level reasoning.
+  (B,1,512)(Current Representaion) instead of (B,N,512)(Ideal Representation) 
 
 2. Limited Training Data
 
-  Training on a relatively small dataset restricts vocabulary richness and complex scene understanding.
+  Training on a relatively small dataset restricts vocabulary richness and complex scene understanding. (Only 8K training images compared to 100M+ training images when SOTA models are trained on)
 
 3. Greedy Decoding
 
