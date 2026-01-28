@@ -132,21 +132,21 @@ However:
 
 ### **Limitations⚠️**
 
-- 1. Single Global Image Representation
+1. Single Global Image Representation
 
   The CNN encoder compresses the entire image into a single vector, which limits fine-grained spatial understanding and object-level reasoning.
 
-- 2. Limited Training Data
+2. Limited Training Data
 
   Training on a relatively small dataset restricts vocabulary richness and complex scene understanding.
 
-- 3. Greedy Decoding
+3. Greedy Decoding
 
   The model uses greedy decoding, which can lead to:
 	•	Less descriptive captions
 	•	Missed alternative phrasings
 
-- 4. Exposure Bias
+4. Exposure Bias
 
   The gap between teacher forcing (training) and autoregressive generation (inference) can cause early mistakes to propagate.
   
