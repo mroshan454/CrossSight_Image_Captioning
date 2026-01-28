@@ -99,7 +99,7 @@ Even when exact wording differs:
 - the scene (street), and their interaction.  
 - shows attributes such as coat color and exact action.
 
-### Qualitative Example(Uneeen Data):
+### Qualitative Example(Unseen Data):
 
 ![Prediction Example Unseen](Images_and_Diagrams/unseen_data.png)
 
@@ -114,7 +114,12 @@ This was an image from COCO Dataset with caption , which is an unseen data durin
 **Analysis📋:** 
 - The model correctly identifies people , motion , clothes , shirt color and outdoor environement.
 - Model captured visual action (running on grass) , shows movement and object understanding.
-- Misses higher-level activity context (e.g., sports), which can be improved with more diverse training data.
+- Misses higher-level activity context (e.g., sports), which can be improved with more diverse and large training data.
+
+
+
+
+
 
 
 
