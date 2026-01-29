@@ -146,12 +146,36 @@ However:
   The model uses greedy decoding, which can lead to:
 	•	Less descriptive captions
 	•	Missed alternative phrasings
+  More advanced decoding strategies can improve caption diversity.
 
 4. Exposure Bias
 
   The gap between teacher forcing (training) and autoregressive generation (inference) can cause early mistakes to propagate.
   
 ### **Future Improvements📈🔨:**
+
+This project focus on building from scratch and understanding the entire architecture. Lots of improvements can be made to enhance the performance and scalability.
+
+1. **Patch-Level Image Representation:**
+- Instead of projecting the whole image into a single global vector (B,1,512) , We can use encoder to output patch-level embeddings (B,N,512)
+- This might improve the cross-attention between more detailed image features and the tokens. 
+
+2. **Advanced Decoding Strategies**
+   Instead of Using Greedy Decoding use more improved decoding strategies like top-k , beam-search sampling.
+
+3. **Large Scale Training**
+   Training on Larger datasets (e.g. MS COCO , Flickr30k) would:
+   - Improve Vocabulary
+   - Reduce Object Confusion
+   - Enhance Robustness to unseen images
+
+## **Key Learnings🔑**
+- Built a Complete Multimodal system from scratch
+- Gained Deep Understanding of Transformer Self-Attention and Cross-Attention
+- Learned practical Difference in Training and Inference in Generative Models
+- Experienced real-world limitations of small scale model training
+- Deployed a complete interactive , user-facing ML system
+
 
 
 
