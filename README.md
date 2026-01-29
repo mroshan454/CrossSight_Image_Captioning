@@ -189,9 +189,14 @@ This project focus on building from scratch and understanding the entire archite
 
 ## How to Run Locally 🖥️
 
+This project is already deployed as a live demo on Hugging Face Spaces.
+
+If you’d like to run the inference demo locally, clone the repository and run the app.  
+The pretrained model weights are automatically downloaded from the Hugging Face Model Hub.
+
 ```bash
 git clone https://github.com/mroshan454/CrossSight_Image_Captioning.git
-cd CrossSight
+cd CrossSight_Image_Captioning
 pip install -r requirements.txt
 python app.py
 ```
