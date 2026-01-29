@@ -177,8 +177,45 @@ This project focus on building from scratch and understanding the entire archite
 - Deployed a complete interactive , user-facing ML system
 
 
+## Dataset & Training Details 📦
 
+- Dataset: Flickr8K
+- Training Images: ~8,000
+- Captions per Image: Up to 5
+- Vocabulary Size: ~8K tokens
+- Training Epochs: 30
+- Loss Function: CrossEntropyLoss (PAD tokens ignored)
+- Optimizer: AdamW
 
+## How to Run Locally 🖥️
+
+```bash
+git clone https://github.com/mroshan454/CrossSight_Image_Captioning.git
+cd CrossSight
+pip install -r requirements.txt
+python app.py
+```
+
+## Why This Project Matters 🎯
+
+Most image captioning projects rely entirely on large pretrained models.
+
+CrossSight was intentionally built **from first principles** to:
+- Understand how vision and language interact via cross-attention
+- Learn the mechanics of autoregressive sequence generation
+- Bridge CNN-based perception with Transformer-based language modeling
+- Gain system-level intuition transferable to larger multimodal models
+
+This project prioritizes **architectural understanding over leaderboard performance**.
+
+## Skills Demonstrated 🧠⚙️
+
+- Multimodal deep learning (vision + language)
+- Transformer internals (self-attention, cross-attention, masking)
+- Autoregressive generation pipelines
+- Training vs inference system design
+- Model deployment with Gradio & Hugging Face Spaces
+- Debugging real-world generalization failures
 
 
 
