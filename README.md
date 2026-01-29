@@ -11,7 +11,7 @@ HuggingFace Spaces: https://roshan454-crosssight.hf.space/?__theme=system&deep_l
 
 This Demo Generates **token-by-token**  animated output captions which is similar to Large Language models generate text in real time.
 
-(Demo_GIF)
+(Add Demo_GIF)
 
 ## Problem Statement🧐📝: 
 
@@ -57,7 +57,7 @@ This System follows a CNN Encoder + Transformer Decoder Architecture:
 - Teacher Forcing is used during Training.
 - Captions are shifted:
   - Input: "<START> a little girl riding a bike
-  - Output: " a little girl riding a bike <STOP>" 
+  - Output: " a little girl riding a bike <END>" 
 - CrossEntropy Loss is computed across all timestep.
 - '<PAD>' tokens are ignored during loss computation.
 
@@ -135,7 +135,9 @@ However:
 1. Single Global Image Representation
 
   The CNN encoder compresses the entire image into a single vector, which limits fine-grained spatial understanding and object-level reasoning.
-  (B,1,512)(Current Representaion) instead of (B,N,512)(Ideal Representation) 
+  Current: (B, 1, 512)  
+  Ideal: (B, N, 512)
+
 
 2. Limited Training Data
 
