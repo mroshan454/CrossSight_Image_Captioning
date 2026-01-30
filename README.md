@@ -7,7 +7,7 @@ The entire architecture is built from scratch using PyTorch , from attention mec
 
 ## Demo💻: 
 
-HuggingFace Spaces: https://roshan454-crosssight.hf.space/?__theme=system&deep_link=6dMURe2Uxjw
+Live Demo on Hugging Face Spaces: https://roshan454-crosssight.hf.space/?__theme=system&deep_link=6dMURe2Uxjw](https://huggingface.co/spaces/roshan454/CrossSight
 
 This Demo Generates **token-by-token**  animated output captions which is similar to Large Language models generate text in real time.
 
