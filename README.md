@@ -11,7 +11,7 @@ HuggingFace Spaces: https://roshan454-crosssight.hf.space/?__theme=system&deep_l
 
 This Demo Generates **token-by-token**  animated output captions which is similar to Large Language models generate text in real time.
 
-(Add Demo_GIF)
+![Demo GIF](Images_and_Diagrams/CrossSight_Demo_GIF.gif)
 
 ## Problem Statement🧐📝: 
 
