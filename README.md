@@ -9,8 +9,6 @@ The entire architecture is built from scratch using PyTorch , from attention mec
 
 🔗 Live Demo on Hugging Face Spaces: https://huggingface.co/spaces/roshan454/CrossSight
 
-🔗 Colab Notebook
-
 This Demo Generates **token-by-token**  animated output captions which is similar to Large Language models generate text in real time.
 
 ![Demo GIF](Images_and_Diagrams/CrossSight_Demo_GIF.gif)
@@ -18,7 +16,7 @@ This Demo Generates **token-by-token**  animated output captions which is simila
 
 ### Training & Experiments (Notebook)
 📓 Colab Notebook (Training, Debugging, Experiments):  
-👉 [https://colab.research.google.com/...](https://colab.research.google.com/drive/1c5UcWXyoLog0JJRsBK6L7cTsDpz5-bFj#scrollTo=t8Okwirn88V-)
+👉 [CrossSight-Image Captioning Using CNN Encoder and Transformer Decoder(PyTorch).ipynb](https://colab.research.google.com/drive/1c5UcWXyoLog0JJRsBK6L7cTsDpz5-bFj#scrollTo=t8Okwirn88V-)
 
 > This notebook contains the full training pipeline, loss curves, and experimental analysis.
 
