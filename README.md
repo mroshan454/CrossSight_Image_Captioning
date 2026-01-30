@@ -56,20 +56,20 @@ This System follows a CNN Encoder + Transformer Decoder Architecture:
 
 - Teacher Forcing is used during Training.
 - Captions are shifted:
-  - Input: "<START> a little girl riding a bike
-  - Output: " a little girl riding a bike <END>" 
+  - Input: ""<START>" a little girl riding a bike
+  - Output: " a little girl riding a bike "<END>"" 
 - CrossEntropy Loss is computed across all timestep.
-- '<PAD>' tokens are ignored during loss computation.
+- '"<PAD>"' tokens are ignored during loss computation.
 
 ## Inference 📝🤔💬:
 
 ![Autoregressive Generation](Images_and_Diagrams/Autoregressive_Caption_Generation_Final.drawio.png)
 
 During Inference:
-- Generation is started with <START> token.
+- Generation is started with "<START>" token.
 - Model Predict One Token at a time.
 - Each Token is appended to the input sequence.
-- Generation stops at <END> or max_length reaches.
+- Generation stops at "<END>" or max_length reaches.
 
 This replicates how GPT-style Language models generate text.
 
