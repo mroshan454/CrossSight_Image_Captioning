@@ -219,7 +219,7 @@ python app.py
 
 Most image captioning projects rely entirely on large pretrained models.
 
-CrossSight was intentionally built **from first principles** to:
+CrossSight was intentionally built **from scratch** to:
 - Understand how vision and language interact via cross-attention
 - Learn the mechanics of autoregressive sequence generation
 - Bridge CNN-based perception with Transformer-based language modeling
