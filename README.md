@@ -16,7 +16,7 @@ This Demo Generates **token-by-token**  animated output captions which is simila
 
 ### Training & Experiments (Notebook)
 📓 Colab Notebook (Training, Debugging, Experiments):  
-👉 [CrossSight-Image Captioning Using CNN Encoder and Transformer Decoder(PyTorch).ipynb](https://colab.research.google.com/drive/1vgLfPT2vzbID7o28gWYD7F5f6hKR9Cxi#scrollTo=MvyO56PXmUCd)
+👉 [CrossSight-Image Captioning Using CNN Encoder and Transformer Decoder(PyTorch).ipynb](https://colab.research.google.com/github/mroshan454/CrossSight_Image_Captioning/blob/main/Pf_CrossSight_Image_Captioning_Using_CNN_Encoder_and_Transformer_Decoder(PyTorch).ipynb)
 
 > This notebook contains the full training pipeline, loss curves, and experimental analysis.
 
