@@ -240,8 +240,8 @@ This project prioritizes **architectural understanding over leaderboard performa
 ## 👨‍💻 Author
 
 **Roshan Mohammed**  
-<br>MSc Artificial Intelligence  
-<br>Focused on applied machine learning, **computer vision, transformers, and deployable deep learning systems**.
+MSc Artificial Intelligence  
+Focused on applied machine learning, **computer vision, transformers, and deployable deep learning systems**.
 
 
 
