@@ -237,6 +237,14 @@ This project prioritizes **architectural understanding over leaderboard performa
 - Debugging real-world generalization failures
 
 
+## 👨‍💻 Author
+
+**Roshan Mohammed**  
+<br>MSc Artificial Intelligence  
+<br>Focused on applied machine learning, **computer vision, transformers, and deployable deep learning systems**.
+
+
+
 
 
 
